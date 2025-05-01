@@ -51,9 +51,11 @@ Het ondersteunen van het `hello`-commando via de console.
 Als de gebruiker `hello` invoert, zeggen **alle dieren hallo**.  
 Als de gebruiker `hello <naam>` invoert, zegt alleen **het dier met die naam hallo**.
 
+Om dit efficiënt te doen, heb ik alle dieren opgeslagen in een `Animal[]` array.  
+Hierdoor kan ik eenvoudig door alle dieren heen loopen met een `for`-each loop, zonder dat ik voor elk dier apart code hoef te schrijven.
+
 In plaats van handmatig voor elke dier een `if-else` structuur te maken (zoals `if (input.equals("hello henk"))`),  
-heb ik ervoor gekozen om een **generieke for-loop** te gebruiken die door een `animals`-array loopt.  
-Hierin controleer ik met `getName().equals(name)` welk dier moet reageren.
+gebruik ik deze loop en controleer ik met `getName().equals(name)` welk dier moet reageren.
 
 Dit is goed omdat:
 - De code is **veel korter en overzichtelijker**
@@ -65,9 +67,24 @@ Deze eerste eis heb ik binnen ongeveer 20 minuten afgerond.
 
 <hr>
 
-### Tweede eis: Give leaves command
+### Tweede, derde en vierde eisen
 
-Na het Hello command maken was dit vrij makkelijk sinds ik alleen moest herhalen maar op een andere manier. 
-Ik hoefde niet iets lastigers te verzinnen. 
+Na het implementeren van het `hello`-commando was het `give leaves`-commando vrij eenvoudig toe te voegen.  
+Ik hoefde in principe alleen de structuur te herhalen, maar met een andere functionaliteit.  
+Er was geen ingewikkelde logica nodig. Ik maakte gebruik van het `instanceof Herbivore`-principe om alleen de plantenetende dieren te pakken.
 
-ik was klaar binnen 10 min 
+Deze stap was binnen 10 minuten afgerond.
+
+Daarna heb ik ook direct de overige eisen toegevoegd:
+- `give meat` voor carnivoren
+- `perform trick` voor dieren die trucjes kunnen uitvoeren
+
+Deze implementaties waren grotendeels **copy-paste**-werk met kleine aanpassingen in de interfacecontrole (`instanceof Carnivore` of `Tricks`), en namen ongeveer 15 minuten in totaal in beslag.
+
+Om de uitvoer overzichtelijker te maken, heb ik ervoor gezorgd dat bij elk gedrag eerst de **naam van het dier wordt weergegeven**, gevolgd door het geluid of trucje.  
+Zo is in de console duidelijk welk dier reageert op welk commando.
+
+Als laatste heb ik een aantal verbeteringen gepland:
+- **Controleren op foutmeldingen en edge cases**
+- **Volledige JavaDoc-documentatie toevoegen**
+- **Een `while`-loop implementeren** zodat de applicatie actief blijft en de gebruiker meerdere commando's kan geven zonder het programma steeds opnieuw te moeten starten
