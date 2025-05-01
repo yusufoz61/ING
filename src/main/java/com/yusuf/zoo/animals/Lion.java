@@ -1,23 +1,23 @@
 package com.yusuf.zoo.animals;
 
-public class Lion {
-    public String name;
-    public String helloText;
-    public String eatText;
+import com.yusuf.zoo.interfaces.Carnivore;
 
-    public Lion()
+public class Lion extends Animal implements Carnivore {
+    public String name;
+
+
+    public Lion(String name)
     {
+        super(name);
     }
 
     public void sayHello()
     {
-        helloText = "roooaoaaaaar";
-        System.out.println(helloText);
+        System.out.println("roooaoaaaaar");
     }
 
     public void eatMeat()
     {
-        eatText = "nomnomnom thx mate";
-        System.out.println(eatText);
+        System.out.println("nomnomnom thx mate");
     }
 }

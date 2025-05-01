@@ -1,23 +1,23 @@
 package com.yusuf.zoo.animals;
 
-public class Hippo {
-    public String name;
-    public String helloText;
-    public String eatText;
+import com.yusuf.zoo.interfaces.Herbivore;
 
-    public Hippo()
+public class Hippo extends Animal implements Herbivore {
+    public String name;
+
+    public Hippo(String name)
     {
+        super(name);
     }
 
     public void sayHello()
     {
-        helloText = "splash";
-        System.out.println(helloText);
+        System.out.println("splash");
     }
+
 
     public void eatLeaves()
     {
-        eatText = "munch munch lovely";
-        System.out.println(eatText);
+        System.out.println("munch munch lovely");
     }
 }

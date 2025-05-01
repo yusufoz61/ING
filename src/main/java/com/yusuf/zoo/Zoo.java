@@ -13,10 +13,8 @@ public class Zoo {
         commands[2] = "give meat";
         commands[3] = "perform trick";
 
-        Lion henk = new Lion();
-        henk.name = "henk";
-        Hippo elsa = new Hippo();
-        elsa.name = "elsa";
+        Lion henk = new Lion("henk");
+        Hippo elsa = new Hippo("elsa");
         Pig dora = new Pig();
         dora.name = "dora";
         Tiger wally = new Tiger();
