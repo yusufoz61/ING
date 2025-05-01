@@ -1,4 +1,4 @@
-package com.yusuf.zoo.interfaces;
+package com.ing.zoo.interfaces;
 
 /**
  * The {@code Carnivore} interface should be implemented by animals that eat meat.

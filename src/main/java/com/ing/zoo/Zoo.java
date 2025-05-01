@@ -1,9 +1,9 @@
-package com.yusuf.zoo;
+package com.ing.zoo;
 
-import com.yusuf.zoo.animals.*;
-import com.yusuf.zoo.interfaces.Carnivore;
-import com.yusuf.zoo.interfaces.Herbivore;
-import com.yusuf.zoo.interfaces.Tricks;
+import com.ing.zoo.animals.*;
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Tricks;
 
 import java.util.Scanner;
 

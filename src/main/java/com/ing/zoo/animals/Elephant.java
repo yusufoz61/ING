@@ -1,7 +1,7 @@
-package com.yusuf.zoo.animals;
+package com.ing.zoo.animals;
 
-import com.yusuf.zoo.interfaces.Herbivore;
-import com.yusuf.zoo.interfaces.Tricks;
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Tricks;
 
 /**
  * Elephants are herbivores and can perform tricks.

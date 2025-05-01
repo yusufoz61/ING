@@ -1,6 +1,6 @@
-package com.yusuf.zoo.animals;
+package com.ing.zoo.animals;
 
-import com.yusuf.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Carnivore;
 
 /**
  * Lions are carnivores and greet with a roar.

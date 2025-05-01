@@ -1,6 +1,6 @@
-package com.yusuf.zoo.animals;
+package com.ing.zoo.animals;
 
-import com.yusuf.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Herbivore;
 
 /**
  * Zebras are herbivores and have their own way of greeting and eating.

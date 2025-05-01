@@ -1,8 +1,8 @@
-package com.yusuf.zoo.animals;
+package com.ing.zoo.animals;
 
-import com.yusuf.zoo.interfaces.Carnivore;
-import com.yusuf.zoo.interfaces.Herbivore;
-import com.yusuf.zoo.interfaces.Tricks;
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Tricks;
 
 /**
  * Monkeys are omnivores — they can eat both meat and plants — and are capable of performing tricks.

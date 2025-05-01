@@ -1,4 +1,4 @@
-package com.yusuf.zoo.animals;
+package com.ing.zoo.animals;
 
 /**
  * Abstract base class for all animals in the zoo.

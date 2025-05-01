@@ -1,4 +1,4 @@
-package com.yusuf.zoo.interfaces;
+package com.ing.zoo.interfaces;
 
 import java.util.Random;
 

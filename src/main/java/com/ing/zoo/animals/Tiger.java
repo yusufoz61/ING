@@ -1,7 +1,7 @@
-package com.yusuf.zoo.animals;
+package com.ing.zoo.animals;
 
-import com.yusuf.zoo.interfaces.Carnivore;
-import com.yusuf.zoo.interfaces.Tricks;
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Tricks;
 
 /**
  * Tigers are carnivores and can perform a variety of tricks.
