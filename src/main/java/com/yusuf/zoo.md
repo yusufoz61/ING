@@ -88,3 +88,8 @@ Als laatste heb ik een aantal verbeteringen gepland:
 - **Controleren op foutmeldingen en edge cases**
 - **Volledige JavaDoc-documentatie toevoegen**
 - **Een `while`-loop implementeren** zodat de applicatie actief blijft en de gebruiker meerdere commando's kan geven zonder het programma steeds opnieuw te moeten starten
+
+
+## Totale tijd: 2 uur en 10 min
+### 1,5 uur code
+### 40 min markdown 
