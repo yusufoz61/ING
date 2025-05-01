@@ -1,7 +1,9 @@
 package com.yusuf.zoo;
 
 import com.yusuf.zoo.animals.*;
+import com.yusuf.zoo.interfaces.Carnivore;
 import com.yusuf.zoo.interfaces.Herbivore;
+import com.yusuf.zoo.interfaces.Tricks;
 
 import java.util.Scanner;
 
@@ -36,6 +38,9 @@ public class Zoo {
 
 
         Scanner scanner = new Scanner(System.in);
+        for(String com : commands){
+            System.out.println(com);
+        }
         System.out.print("Voer uw command in: ");
         String input = scanner.nextLine();
 
@@ -44,12 +49,14 @@ public class Zoo {
         if(input.equals(commands[0]))
         {
             for(Animal animal : animals){
+                System.out.print(animal.getName() + ": ");
                 animal.sayHello();
             }
         }else if(words.length >= 2 && input.equals(commands[0])){
             String name = words[1];
             for(Animal animal : animals){
                 if(animal.getName().equals(name)){
+                    System.out.print(animal.getName() + ": ");
                     animal.sayHello();
                 }
             }
@@ -57,7 +64,22 @@ public class Zoo {
         }else if(input.equals(commands[1])){
             for(Animal animal : animals){
                 if(animal instanceof Herbivore){
+                    System.out.print(animal.getName() + ": ");
                     ((Herbivore) animal).eatLeaves();
+                }
+            }
+        }else if(input.equals(commands[2])){
+            for(Animal animal : animals){
+                if(animal instanceof Carnivore){
+                    System.out.print(animal.getName() + ": ");
+                    ((Carnivore) animal).eatMeat();
+                }
+            }
+        }else if(input.equals(commands[3])){
+            for(Animal animal : animals){
+                if(animal instanceof Tricks){
+                    System.out.print(animal.getName() + ": ");
+                    ((Tricks) animal).performTrick();
                 }
             }
         }

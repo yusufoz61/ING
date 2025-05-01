@@ -63,3 +63,11 @@ Dit is goed omdat:
 Deze eerste eis heb ik binnen ongeveer 20 minuten afgerond.
 
 
+<hr>
+
+### Tweede eis: Give leaves command
+
+Na het Hello command maken was dit vrij makkelijk sinds ik alleen moest herhalen maar op een andere manier. 
+Ik hoefde niet iets lastigers te verzinnen. 
+
+ik was klaar binnen 10 min 
