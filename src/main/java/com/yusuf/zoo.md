@@ -40,3 +40,26 @@ Ik heb ervoor gekozen om alle Javadoc in het Engels te schrijven, zodat het univ
 
 Het heeft me ongeveer 50 minuten gekost om alles tot dit punt te brengen.  
 Nu ga ik aan de slag met de `Zoo.java`-klasse om de applicatie volledig werkend te maken.
+
+<hr>
+
+### Eerste eis: Hello-command
+
+Na het opzetten van de dieren en hun gedrag, heb ik de eerste functionele eis geïmplementeerd:  
+Het ondersteunen van het `hello`-commando via de console.
+
+Als de gebruiker `hello` invoert, zeggen **alle dieren hallo**.  
+Als de gebruiker `hello <naam>` invoert, zegt alleen **het dier met die naam hallo**.
+
+In plaats van handmatig voor elke dier een `if-else` structuur te maken (zoals `if (input.equals("hello henk"))`),  
+heb ik ervoor gekozen om een **generieke for-loop** te gebruiken die door een `animals`-array loopt.  
+Hierin controleer ik met `getName().equals(name)` welk dier moet reageren.
+
+Dit is goed omdat:
+- De code is **veel korter en overzichtelijker**
+- Het is **schaalbaar**: als ik een nieuw dier toevoeg, werkt het automatisch zonder extra `if`-blokken
+- Het gebruikt **OOP en polymorfisme**: alle dieren hebben dezelfde methode `sayHello()`, maar die voert per dier ander gedrag uit
+
+Deze eerste eis heb ik binnen ongeveer 20 minuten afgerond.
+
+

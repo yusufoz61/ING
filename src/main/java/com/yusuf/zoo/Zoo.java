@@ -1,6 +1,7 @@
 package com.yusuf.zoo;
 
 import com.yusuf.zoo.animals.*;
+import com.yusuf.zoo.interfaces.Herbivore;
 
 import java.util.Scanner;
 
@@ -45,7 +46,7 @@ public class Zoo {
             for(Animal animal : animals){
                 animal.sayHello();
             }
-        }else if(words.length >= 2){
+        }else if(words.length >= 2 && input.equals(commands[0])){
             String name = words[1];
             for(Animal animal : animals){
                 if(animal.getName().equals(name)){
@@ -53,6 +54,12 @@ public class Zoo {
                 }
             }
 
+        }else if(input.equals(commands[1])){
+            for(Animal animal : animals){
+                if(animal instanceof Herbivore){
+                    ((Herbivore) animal).eatLeaves();
+                }
+            }
         }
 
     }
