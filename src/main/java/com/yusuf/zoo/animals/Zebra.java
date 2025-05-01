@@ -1,24 +1,23 @@
 package com.yusuf.zoo.animals;
 
-public class Zebra {
-    public String name;
-    public String helloText;
-    public String eatText;
-    public String trick;
+import com.yusuf.zoo.interfaces.Herbivore;
 
-    public Zebra()
+public class Zebra extends Animal implements Herbivore {
+    public String name;
+
+
+    public Zebra(String name)
     {
+        super(name);
     }
 
     public void sayHello()
     {
-        helloText = "zebra zebra";
-        System.out.println(helloText);
+        System.out.println("zebra zebra");
     }
 
     public void eatLeaves()
     {
-        eatText = "munch munch zank yee bra";
-        System.out.println(eatText);
+        System.out.println("munch munch zank yee bra");
     }
 }

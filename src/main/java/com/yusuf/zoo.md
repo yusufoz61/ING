@@ -23,3 +23,6 @@ want hierdoor kunnen andere programmeerders weten wat het code inhoudt.
 <hr>
 
 Na het opzetten van het plan ben ik van start gegaan met het maken van de hoofdklasse Animal.
+Het opzetten ging soepeltjes, gelijk daarna heb ik de Interfaces gemaakt.
+Toen ik daarmee klaar was pasde ik de dieren aan, en liet ze allemaal Animal extenden.
+Herbivore of Carnivore en/of Tricks implementeren.

@@ -15,12 +15,9 @@ public class Zoo {
 
         Lion henk = new Lion("henk");
         Hippo elsa = new Hippo("elsa");
-        Pig dora = new Pig();
-        dora.name = "dora";
-        Tiger wally = new Tiger();
-        wally.name = "wally";
-        Zebra marty = new Zebra();
-        marty.name = "marty";
+        Pig dora = new Pig("dora");
+        Tiger wally = new Tiger("wally");
+        Zebra marty = new Zebra("marty");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
