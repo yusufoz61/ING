@@ -3,34 +3,45 @@ package com.yusuf.zoo.animals;
 import com.yusuf.zoo.interfaces.Carnivore;
 import com.yusuf.zoo.interfaces.Tricks;
 
-import java.util.Random;
-
+/**
+ * Tigers are carnivores and can perform a variety of tricks.
+ */
 public class Tiger extends Animal implements Carnivore, Tricks {
-    public String name;
-
-
-    public Tiger(String name){
+    /**
+     * Constructs a {@code Tiger} with the specified name.
+     *
+     * @param name The name of the tiger.
+     */
+    public Tiger(String name) {
         super(name);
     }
 
+    /**
+     * Makes the tiger say hello with a growling sound.
+     */
     @Override
-    public void sayHello()
-    {
+    public void sayHello() {
         System.out.println("rraaarww");
     }
 
+    /**
+     * Describes how the tiger eats meat.
+     */
     @Override
-    public void eatMeat()
-    {
+    public void eatMeat() {
         System.out.println("nomnomnom oink wubalubadubdub");
     }
 
+    /**
+     * Returns a list of tricks the tiger can perform.
+     *
+     * @return An array of trick descriptions.
+     */
     @Override
-    public String[] getTricks(){
-       return new String[]{
-               "jumps in tree", "scratches ears"
-       };
+    public String[] getTricks() {
+        return new String[]{
+                "jumps in tree",
+                "scratches ears"
+        };
     }
-
-
 }

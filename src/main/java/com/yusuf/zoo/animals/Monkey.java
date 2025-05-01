@@ -4,15 +4,21 @@ import com.yusuf.zoo.interfaces.Carnivore;
 import com.yusuf.zoo.interfaces.Herbivore;
 import com.yusuf.zoo.interfaces.Tricks;
 
+/**
+ * Monkeys are omnivores — they can eat both meat and plants — and are capable of performing tricks.
+ */
 public class Monkey extends Animal implements Herbivore, Carnivore, Tricks {
-    public String name;
-
+    /**
+     * Constructs a {@code Monkey} with the specified name.
+     *
+     * @param name The name of the monkey.
+     */
     public Monkey(String name) {
         super(name);
     }
 
     /**
-     *
+     * Makes the monkey say hello using typical monkey sounds.
      */
     @Override
     public void sayHello() {
@@ -20,7 +26,7 @@ public class Monkey extends Animal implements Herbivore, Carnivore, Tricks {
     }
 
     /**
-     *
+     * Describes how the monkey eats meat.
      */
     @Override
     public void eatMeat() {
@@ -28,7 +34,7 @@ public class Monkey extends Animal implements Herbivore, Carnivore, Tricks {
     }
 
     /**
-     *
+     * Describes how the monkey eats leaves or plants.
      */
     @Override
     public void eatLeaves() {
@@ -36,7 +42,9 @@ public class Monkey extends Animal implements Herbivore, Carnivore, Tricks {
     }
 
     /**
-     * @return
+     * Returns a list of tricks the monkey can perform.
+     *
+     * @return An array of trick descriptions.
      */
     @Override
     public String[] getTricks() {

@@ -27,6 +27,15 @@ Het opzetten ging soepeltjes, gelijk daarna heb ik de Interfaces gemaakt.
 Toen ik daarmee klaar was pasde ik de dieren aan, en liet ze allemaal Animal extenden.
 Herbivore of Carnivore en/of Tricks implementeren.
 
-Ik heb alle klassen opgezet, nu ga ik 2 nieuwe dieren toevoegen.
 Ik zat het langst vast bij het Tricks Interface hoe ik dat het best zou kunnen doen en
-ik ben tot een goede oplossing gekomen.
+ik ben tot een goede oplossing gekomen. Waardoor je nu verschillende aantallen tricks kan hebben
+en het methode werkt nogsteeds.
+Ik heb alle klassen opgezet, nu ga ik 2 nieuwe dieren toevoegen.
+
+
+Na het opzetten van de 2 dieren ben ik aan de slag gegaan om te kijken of ik overal juiste
+documentatie heb toegepast anders verbeteren, ik doe het in het Engels om dat het universeel te begrijpen is.
+
+Dit heeft me ongeveer een 40 min gekost om alles tot dit punt te krijgen.
+Nu ga ik beginnen met het zoo.java om het te laten werken.
+
