@@ -11,11 +11,12 @@ public class Lion extends Animal implements Carnivore {
         super(name);
     }
 
+    @Override
     public void sayHello()
     {
         System.out.println("roooaoaaaaar");
     }
-
+    @Override
     public void eatMeat()
     {
         System.out.println("nomnomnom thx mate");

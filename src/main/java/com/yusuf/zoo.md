@@ -26,3 +26,7 @@ Na het opzetten van het plan ben ik van start gegaan met het maken van de hoofdk
 Het opzetten ging soepeltjes, gelijk daarna heb ik de Interfaces gemaakt.
 Toen ik daarmee klaar was pasde ik de dieren aan, en liet ze allemaal Animal extenden.
 Herbivore of Carnivore en/of Tricks implementeren.
+
+Ik heb alle klassen opgezet, nu ga ik 2 nieuwe dieren toevoegen.
+Ik zat het langst vast bij het Tricks Interface hoe ik dat het best zou kunnen doen en
+ik ben tot een goede oplossing gekomen.

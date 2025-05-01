@@ -13,21 +13,24 @@ public class Tiger extends Animal implements Carnivore, Tricks {
         super(name);
     }
 
+    @Override
     public void sayHello()
     {
         System.out.println("rraaarww");
     }
 
+    @Override
     public void eatMeat()
     {
         System.out.println("nomnomnom oink wubalubadubdub");
     }
 
-   public String[] getTricks(){
+    @Override
+    public String[] getTricks(){
        return new String[]{
                "jumps in tree", "scratches ears"
        };
-   }
+    }
 
 
 }
