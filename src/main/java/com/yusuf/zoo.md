@@ -1,41 +1,42 @@
 ## Zoo
 <hr>
 
-### snappen
+### Inzicht
 
-Ik ben van start gegaan op 01/05/2025, om 18:00~
+Ik ben op 01/05/2025 om 18:00 van start gegaan met deze opdracht.
 
-Als eerste ben ik mijn tijd gaan nemen om het opdracht te snappen.<br>
-Ik ben er gelijk achter gekomen dat de dieren veel methodes hebben die met elkaar overeenkomen.<br>
+Allereerst heb ik de tijd genomen om de opdracht goed te begrijpen.  
+Al snel kwam ik erachter dat de dieren veel methodes met elkaar gemeen hebben.
 
-Elke dier heeft een naam en zegt hallo, dus ik kan een hoofd klasse maken genaamd Animal.
-Elke dier extend Animal en erft daarmee name en sayHello.
+Elk dier heeft een naam en zegt hallo. Daarom heb ik besloten om een hoofdlklasse genaamd `Animal` te maken.  
+Elke diersoort extends `Animal` en erft daarmee eigenschappen zoals `name` en de methode `sayHello()`.
 
-Vervolgens elk dier eet bladeren of vlees of doet een trukje.
-Ik kan van die drie dingen Interfaces maken.
-En zorgen dat de dieren die vlees eten de Carnivore Interface implementeren.
-Hetzelfde geldt voor de plant etende die implementeren de Interface Herbivore.
-En als ze een trukje doen implementeren ze het Tricks Interface.
+Daarnaast viel het op dat elk dier ofwel bladeren eet, vlees eet, of een trucje kan uitvoeren.  
+Daarom heb ik voor deze drie gedragingen aparte interfaces gemaakt.
 
-Ook heb ik gemerkt dat er nergens JavaDoc wordt toegepast, terwijl dat zeer belangrijk is,
-want hierdoor kunnen andere programmeerders weten wat het code inhoudt.
+- Vleesetende dieren implementeren de `Carnivore`-interface.
+- Planteneters implementeren de `Herbivore`-interface.
+- Dieren die een trucje kunnen doen, implementeren de `Tricks`-interface.
+
+Ook heb ik gemerkt dat er nergens gebruik wordt gemaakt van Javadoc, terwijl dit juist erg belangrijk is.  
+Met goede documentatie kunnen andere ontwikkelaars de code sneller begrijpen en gebruiken.
 
 <hr>
 
-Na het opzetten van het plan ben ik van start gegaan met het maken van de hoofdklasse Animal.
-Het opzetten ging soepeltjes, gelijk daarna heb ik de Interfaces gemaakt.
-Toen ik daarmee klaar was pasde ik de dieren aan, en liet ze allemaal Animal extenden.
-Herbivore of Carnivore en/of Tricks implementeren.
+Na het opzetten van dit plan ben ik begonnen met het maken van de hoofdklasse `Animal`.  
+Dat ging soepel. Vervolgens heb ik de interfaces opgesteld.
 
-Ik zat het langst vast bij het Tricks Interface hoe ik dat het best zou kunnen doen en
-ik ben tot een goede oplossing gekomen. Waardoor je nu verschillende aantallen tricks kan hebben
-en het methode werkt nogsteeds.
-Ik heb alle klassen opgezet, nu ga ik 2 nieuwe dieren toevoegen.
+Daarna heb ik de bestaande dieren aangepast zodat ze allemaal `Animal` extenden en de juiste interfaces implementeren:  
+`Herbivore`, `Carnivore`, en/of `Tricks`, afhankelijk van hun gedrag.
 
+Het langste zat ik vast op het ontwerp van de `Tricks`-interface. Ik heb lang nagedacht over hoe ik dat het beste kon aanpakken.  
+Uiteindelijk ben ik tot een goede oplossing gekomen: elk dier geeft zijn eigen lijst van trucjes door via `getTricks()`,  
+en de interface kiest daar willekeurig één uit. Zo kun je meerdere trucjes per dier hebben, terwijl de methode eenvoudig blijft werken.
 
-Na het opzetten van de 2 dieren ben ik aan de slag gegaan om te kijken of ik overal juiste
-documentatie heb toegepast anders verbeteren, ik doe het in het Engels om dat het universeel te begrijpen is.
+Alle bestaande klassen zijn nu opgezet. Ik ga nu twee nieuwe dieren toevoegen.
 
-Dit heeft me ongeveer een 40 min gekost om alles tot dit punt te krijgen.
-Nu ga ik beginnen met het zoo.java om het te laten werken.
+Na het toevoegen van de twee nieuwe dieren ben ik verder gegaan met het controleren en verbeteren van de documentatie.  
+Ik heb ervoor gekozen om alle Javadoc in het Engels te schrijven, zodat het universeel begrijpelijk is.
 
+Het heeft me ongeveer 50 minuten gekost om alles tot dit punt te brengen.  
+Nu ga ik aan de slag met de `Zoo.java`-klasse om de applicatie volledig werkend te maken.
