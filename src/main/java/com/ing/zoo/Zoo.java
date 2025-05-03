@@ -76,14 +76,14 @@ public class Zoo {
                 break;
             }
 
-            // hello (all)
+            // hello all
             if (input.equalsIgnoreCase("hello")) {
                 for (Animal animal : animals) {
                     System.out.print(animal.getName() + ": ");
                     animal.sayHello();
                 }
 
-                // hello [name]
+                // hello name
             } else if (words.length >= 2 && words[0].equalsIgnoreCase("hello")) {
                 String name = words[1];
                 boolean found = false;

@@ -10,7 +10,7 @@ public interface Tricks {
     /**
      * Performs a random trick from the list provided by {@link #getTricks()}.
      * This method is defined as a default implementation, so individual classes only need to
-     * supply their own trick list by implementing {@code getTricks()}.
+     * give their own trick list by implementing {@code getTricks()}.
      */
     default void performTrick() {
         String[] tricks = getTricks();
